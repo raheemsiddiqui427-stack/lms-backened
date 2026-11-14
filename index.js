@@ -14,7 +14,7 @@ connectMongo()
 // console.log("DEBUG STRIPE_KEY exists =", Boolean(process.env.STRIPE_SECRET_KEY))
 app.use(cors());
 app.use(cors({
-  origin: ['https://lms-system-project.netlify.app','https://lms-admin-12.netlify.app/admin/login'], 
+  origin: ['https://lms-system-project.netlify.app','https://lms-admin-12.netlify.app'], 
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
   credentials: true,  
   allowedHeaders: ['Content-Type', 'Authorization']
